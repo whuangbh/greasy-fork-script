@@ -12,11 +12,14 @@
 (function () {
     "use strict";
 
-    const anchor = "div.yuRUbf>div>a";
-    const youtubeLink = "a.X5OiLe";
-    const smAnchor = "a.l";
+    // big anchor tag: div.yuRUbf>div>a
+    // youtube link: a.X5OiLe
+    // sm anchor tag: a.l, a.fl,
 
-    const arr = $(`${anchor}, ${youtubeLink}, ${smAnchor}`);
+    const querySelector = ["div.yuRUbf>div>a", "a.X5OiLe", "a.l", "a.fl"];
+    const arr = [];
+
+    for (const query of querySelector) arr.push($(query));
 
     const apply = (arr) => {
         for (const item of arr) $(item).attr("target", "_blank");
