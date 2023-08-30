@@ -1,6 +1,5 @@
 // ==UserScript==
 // @name         Google search result open in new tab
-// @namespace    http://tampermonkey.net/
 // @version      1.1
 // @description  As the name suggests, open the google search result in a new tab
 // @author       Hw
