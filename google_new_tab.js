@@ -16,7 +16,7 @@
     const youtubeLink = "a.X5OiLe";
     const smAnchor = "a.l";
 
-    const arr = $(anchor, youtubeLink, smAnchor);
+    const arr = $(`${anchor}, ${youtubeLink}, ${smAnchor}`);
 
     const apply = (arr) => {
         for (const item of arr) $(item).attr("target", "_blank");
