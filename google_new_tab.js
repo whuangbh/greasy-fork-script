@@ -13,7 +13,7 @@
 (function () {
     "use strict";
 
-    // big anchor tag: div.yuRUbf>div>a
+    // big anchor tag: div.yuRUbf>div>a, l
     // youtube link: a.X5OiLe
     // sm anchor tag: a.fl, div.HiHjCd>a
 
@@ -21,6 +21,7 @@
         "div.yuRUbf>div>a",
         "a.X5OiLe",
         "a.fl",
+        "a.l",
         "div.HiHjCd>a",
     ];
 
