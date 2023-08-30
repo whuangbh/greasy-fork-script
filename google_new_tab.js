@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Google search result open in new tab
 // @namespace    http://tampermonkey.net/
-// @version      1.0
-// @description  As the name suggests, open the google search reuslt in new tab
+// @version      1.1
+// @description  As the name suggests, open the google search result in a new tab
 // @author       Hw
 // @match        https://www.google.com/search?*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
@@ -12,13 +12,16 @@
 
 (function () {
     "use strict";
-    const anchorList = $("div.yuRUbf>div>a");
-    const youtubeLinkList = $("a.X5OiLe");
+
+    const anchor = "div.yuRUbf>div>a";
+    const youtubeLink = "a.X5OiLe";
+    const smAnchor = "a.l";
+
+    const arr = $(anchor, youtubeLink, smAnchor);
 
     const apply = (arr) => {
         for (const item of arr) $(item).attr("target", "_blank");
     };
 
-    apply(anchorList);
-    apply(youtubeLinkList);
+    apply(arr);
 })();
