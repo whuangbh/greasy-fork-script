@@ -16,7 +16,12 @@
     // youtube link: a.X5OiLe
     // sm anchor tag: a.fl,
 
-    const querySelector = ["div.yuRUbf>div>a", "a.X5OiLe", "a.fl"];
+    const querySelector = [
+        "div.yuRUbf>div>a",
+        "a.X5OiLe",
+        "a.fl",
+        "div.wQiwMc.related-question-pair a",
+    ];
     // const arr = [];
 
     for (const query of querySelector) $(query).attr("target", "_blank");
