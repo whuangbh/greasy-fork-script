@@ -13,7 +13,7 @@
 (function () {
     "use strict";
 
-    // big anchor tag: div.yuRUbf>div>a, l
+    // big anchor tag: div.yuRUbf>div>a, a.l
     // youtube link: a.X5OiLe
     // sm anchor tag: a.fl, div.HiHjCd>a
 
