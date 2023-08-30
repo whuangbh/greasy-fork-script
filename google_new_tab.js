@@ -14,16 +14,16 @@
 
     // big anchor tag: div.yuRUbf>div>a
     // youtube link: a.X5OiLe
-    // sm anchor tag: a.l, a.fl,
+    // sm anchor tag: a.fl,
 
-    const querySelector = ["div.yuRUbf>div>a", "a.X5OiLe", "a.l", "a.fl"];
-    const arr = [];
+    const querySelector = ["div.yuRUbf>div>a", "a.X5OiLe", "a.fl"];
+    // const arr = [];
 
-    for (const query of querySelector) arr.push($(query));
+    for (const query of querySelector) $(query).attr("target", "_blank");
 
-    const apply = (arr) => {
-        for (const item of arr) $(item).attr("target", "_blank");
-    };
+    // const apply = (arr) => {
+    //     for (const item of arr) $(item).attr("target", "_blank");
+    // };
 
-    apply(arr);
+    // apply(arr);
 })();
