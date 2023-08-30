@@ -29,5 +29,6 @@
     // Expandable button
     $("div.dnXCYb").click(() => {
         $("div.yuRUbf>div>a").attr("target", "_blank");
+        $("div.GdN4W.d0fCJc.BOZ6hd>a").attr("target", "_blank");
     });
 })();
