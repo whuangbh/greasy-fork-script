@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Google search result open in new tab
-// @version      1.2
+// @version      1.21
 // @description  As the name suggests, open the google search result in a new tab
 // @author       Hw
 // @match        https://www.google.com/search?*
