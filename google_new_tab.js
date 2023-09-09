@@ -18,18 +18,18 @@
     // sm anchor tag: a.fl, div.HiHjCd>a
 
     const querySelector = [
-        "div.yuRUbf>div>a",
+        "div.yuRUbf div a",
         "a.X5OiLe",
         "a.fl",
         "a.l",
-        "div.HiHjCd>a",
+        "div.HiHjCd a",
     ];
 
     for (const query of querySelector) $(query).attr("target", "_blank");
 
     // Expandable button
     $("div.dnXCYb").click(() => {
-        $("div.yuRUbf>div>a").attr("target", "_blank");
-        $("div.GdN4W.d0fCJc.BOZ6hd>a").attr("target", "_blank");
+        $("div.yuRUbf div a").attr("target", "_blank");
+        $("div.GdN4W.d0fCJc.BOZ6hd a").attr("target", "_blank");
     });
 })();
