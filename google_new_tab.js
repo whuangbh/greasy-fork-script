@@ -11,25 +11,18 @@
 // ==/UserScript==
 
 (function () {
-    "use strict";
+	"use strict";
 
-    // big anchor tag: div.yuRUbf>div>a, a.l
-    // youtube link: a.X5OiLe
-    // sm anchor tag: a.fl, div.HiHjCd>a
+	$("div#center_col").click((event) => {
+		let target = event.target;
 
-    const querySelector = [
-        "div.yuRUbf div a",
-        "a.X5OiLe",
-        "a.fl",
-        "a.l",
-        "div.HiHjCd a",
-    ];
-
-    for (const query of querySelector) $(query).attr("target", "_blank");
-
-    // Expandable button
-    $("div.dnXCYb").click(() => {
-        $("div.yuRUbf div a").attr("target", "_blank");
-        $("div.GdN4W.d0fCJc.BOZ6hd a").attr("target", "_blank");
-    });
+		while (target && target !== document) {
+			if (target.tagName === "A") {
+				event.preventDefault();
+				window.open(target.href, "_blank");
+				break;
+			}
+			target = target.parentElement;
+		}
+	});
 })();
