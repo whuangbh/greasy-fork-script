@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Google search result open in new tab
-// @version      1.3
+// @version      1.31
 // @description  As the name suggests, open the google search result in a new tab
 // @author       Hw
 // @match        https://www.google.com/search?*
@@ -13,7 +13,7 @@
 (function () {
 	"use strict";
 
-	$("div#center_col").click((event) => {
+	$("div#rcnt").click((event) => {
 		let target = event.target;
 
 		while (target && target !== document) {
