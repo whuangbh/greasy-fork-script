@@ -19,15 +19,18 @@
             const link = event.target.closest("a");
 
             if (link && link.href) {
-                const isResultLink = link.querySelector("h3");
                 const isInResultsArea =
                     link.closest("#search") || link.closest("#main");
 
-                if (
-                    isInResultsArea &&
-                    isResultLink &&
-                    link.href.startsWith("http")
-                ) {
+                const containsH3 = link.querySelector("h3");
+                const containsMobileHeading = link.querySelector(
+                    'div[role="heading"][aria-level="3"]'
+                );
+
+                const isResultLink =
+                    isInResultsArea && (containsH3 || containsMobileHeading);
+
+                if (isResultLink && link.href.startsWith("http")) {
                     if (link.pathname === "/search") {
                         return;
                     }
