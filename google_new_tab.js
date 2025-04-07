@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Google search result open in new tab 谷歌搜尋結果開新分頁
+// @name         Google search result open in new tab [Desktop & Mobile] 谷歌搜尋結果開新分頁
 // @version      1.40
-// @description  As the name suggests, open the google search result in a new tab
+// @description  Open the google search result in a new tab, support desktop and mobile 谷歌搜尋結果會開新分頁，支持電腦和手機
 // @author       Hw
 // @match        https://www.google.com/search?*
 // @match        https://www.google.com.*/search?*
