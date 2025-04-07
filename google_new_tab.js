@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Google search result open in new tab
+// @name         Google search result open in new tab 谷歌搜尋結果開新分頁
 // @version      1.40
 // @description  As the name suggests, open the google search result in a new tab
 // @author       Hw
